@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Singapore Tourism</title>
+</head>
+<body>
+    <div id="all">
+        <h3>Singapore Tourism</h3>
+        <form action="">
+        <table>
+            <tbody>
+                <!-- NAME -->
+                <tr>
+                  <td>
+                    Name
+                  </td>
+                  <td>
+                    <input type="text" id="na" required>
+                  </td>
+                </tr>
+                <!-- phone no -->
+                <tr>
+                    <td>
+                        Phone no
+                    </td>
+                    <td>
+                        <input type="tel" name="ph" id="ph" required>
+                    </td>
+                </tr>
+                <!-- email id  -->
+                <tr>
+                    <td>Email id</td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <!-- no of persions -->
+                <tr>
+                    <td>
+                        No of Persons
+                    </td>
+                    <td>
+                      
+                        <input type="number" id="np"> 
+                    </td>
+                </tr>
+                <!-- prefer stay -->
+                <tr>
+                    <td>
+                        Prefer Stay
+                    </td>
+                    <td>
+                       
+                        <!-- <input type="radio" id="y" value="yes" name="stay" onchange="show()" >  -->
+                        <input type="radio" id="y" value="yes" name="stay" onchange="show()" > 
+                        <label for="y">Yes</label>
+                      
+                        <!-- <input type="radio" id="n" value="no" name="stay" onclick="disablenoofdays()"> -->
+                        <input type="radio" id="n" value="no" name="stay" onchange="disablenoofdays()">
+                        <label for="n">No</label>
+                    </td>
+                </tr>
+                <!-- No of days stay -->
+                <tr>
+                    <td>No of days stay</td>
+                    <td>
+                        <input type="number" id="nd">
+                    </td>
+                </tr>
+                <!-- place you would like to visit -->
+                <tr>
+                    <td>
+                        Place you would like to visit
+                    </td>
+                    <td>
+                        <!-- if you want checkbox allredy checked than use cheched attribute -->
+                      <input type="checkbox" name="" id="p" class="place" value="350" >
+                      <label for="p">Places Of Pilgrimage</label> <br>
+                      
+                      <input type="checkbox" name="" id="h" class="place" value="430">
+                      <label for="h">Places Of Heritage</label> <br>
+                      
+                      <input type="checkbox" name="" id="hi" class="place" value="780">
+                      <label for="hi">Hills</label> <br>
+                      
+                      <input type="checkbox" name="" id="fa" class="place" value="1200">
+                      <label for="fa">Falls</label> <br>
+                      
+                      <input type="checkbox" name="" id="be" class="place" value="270">
+                      <label for="be">Beach</label> <br>
+
+                      <input type="checkbox" name="" id="ad" class="place" value="4500">
+                      <label for="ad">Places Of Adventures</label> 
+                   
+
+                    </td>
+                </tr>
+                <!-- calculate cost -->
+                <tr>
+                    <td>
+                       <input type="submit" value="Calculate cost" onclick="calculate()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="answer"> </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    </div>
+    <script src="./s.js"></script>
+</body>
+</html>
